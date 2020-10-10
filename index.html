@@ -184,6 +184,7 @@
 			if (!playing) { return; }
 			var lowestEmptyInCol = getLowestEmptyInCol(cell);
 			if (lowestEmptyInCol !== -1) {
+				new Audio('./Chip Drop.mp3').play()
 				data[lowestEmptyInCol] = turn;
 				if (turn === "X") { turn = "O"; }
 				else if (turn === "O") { turn = "X"; }
