@@ -164,6 +164,7 @@
 					 "", "", "", "", "", "", "",
 					 "", "", "", "", "", "", ""
 					];
+			new Audio('./New Game.mp3').play();
 			updateView();
 		}
 
@@ -184,7 +185,7 @@
 			if (!playing) { return; }
 			var lowestEmptyInCol = getLowestEmptyInCol(cell);
 			if (lowestEmptyInCol !== -1) {
-				new Audio('./Chip Drop.mp3').play()
+				new Audio('./Chip Drop.mp3').play();
 				data[lowestEmptyInCol] = turn;
 				if (turn === "X") { turn = "O"; }
 				else if (turn === "O") { turn = "X"; }
@@ -217,6 +218,7 @@
 
 		function win(who) {
 			playing = false;
+			new Audio('./Winner.mp3').play();
 			if (who === "X") {
 				document.getElementById("turn").innerHTML = "<span style='color: #B3210D;'>RED WON!</span>";
 			}
