@@ -18,7 +18,16 @@
 	}
 
 	#header {
-		margin-top: 50px;
+		margin-top: 40px;
+		text-align: center;
+		font-size: 80px;
+		color: white;
+	}
+
+	#turn {
+		margin-top: -10px;
+		font-size: 30px;
+		text-align: center;
 	}
 
 	body {
@@ -51,14 +60,16 @@
 		text-align: center;
 		cursor: pointer;
 	}
-	td:hover {
+
+	.hover {
 		border: 5px solid #4169E3;
 	}
 
 	#reset {
-		margin-top: 25px;
+		margin-top: 30px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 20px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		width: 310px;
@@ -69,75 +80,70 @@
 		background-color: #FDDB5B;
 	}
 
-	#turn {
-		font-size: 50px;
-		text-align: center;
-	}
-
 
 </style>
 
 
 <body>
 
-	<div id="header"></div>
+	<div id="header">Connect 4!</div>
 
 	<p id="turn"></p>
 
 	<table>
 		<tr>
-			<td id="cell-0" onclick="hit(0)"></td>
-			<td id="cell-1" onclick="hit(1)"></td>
-			<td id="cell-2" onclick="hit(2)"></td>
-			<td id="cell-3" onclick="hit(3)"></td>
-			<td id="cell-4" onclick="hit(4)"></td>
-			<td id="cell-5" onclick="hit(5)"></td>
-			<td id="cell-6" onclick="hit(6)"></td>
+			<td id="cell-0" onclick="hit(0)" onmouseover="hover(0)"></td>
+			<td id="cell-1" onclick="hit(1)" onmouseover="hover(1)"></td>
+			<td id="cell-2" onclick="hit(2)" onmouseover="hover(2)"></td>
+			<td id="cell-3" onclick="hit(3)" onmouseover="hover(3)"></td>
+			<td id="cell-4" onclick="hit(4)" onmouseover="hover(4)"></td>
+			<td id="cell-5" onclick="hit(5)" onmouseover="hover(5)"></td>
+			<td id="cell-6" onclick="hit(6)" onmouseover="hover(6)"></td>
 		</tr>
 		<tr>
-			<td id="cell-7" onclick="hit(7)"></td>
-			<td id="cell-8" onclick="hit(8)"></td>
-			<td id="cell-9" onclick="hit(9)"></td>
-			<td id="cell-10" onclick="hit(10)"></td>
-			<td id="cell-11" onclick="hit(11)"></td>
-			<td id="cell-12" onclick="hit(12)"></td>
-			<td id="cell-13" onclick="hit(13)"></td>
+			<td id="cell-7" onclick="hit(7)" onmouseover="hover(7)"></td>
+			<td id="cell-8" onclick="hit(8)" onmouseover="hover(8)"></td>
+			<td id="cell-9" onclick="hit(9)" onmouseover="hover(9)"></td>
+			<td id="cell-10" onclick="hit(10)" onmouseover="hover(10)"></td>
+			<td id="cell-11" onclick="hit(11)" onmouseover="hover(11)"></td>
+			<td id="cell-12" onclick="hit(12)" onmouseover="hover(12)"></td>
+			<td id="cell-13" onclick="hit(13)" onmouseover="hover(13)"></td>
 		</tr>
 		<tr>
-			<td id="cell-14" onclick="hit(14)"></td>
-			<td id="cell-15" onclick="hit(15)"></td>
-			<td id="cell-16" onclick="hit(16)"></td>
-			<td id="cell-17" onclick="hit(17)"></td>
-			<td id="cell-18" onclick="hit(18)"></td>
-			<td id="cell-19" onclick="hit(19)"></td>
-			<td id="cell-20" onclick="hit(20)"></td>
+			<td id="cell-14" onclick="hit(14)" onmouseover="hover(14)"></td>
+			<td id="cell-15" onclick="hit(15)" onmouseover="hover(15)"></td>
+			<td id="cell-16" onclick="hit(16)" onmouseover="hover(16)"></td>
+			<td id="cell-17" onclick="hit(17)" onmouseover="hover(17)"></td>
+			<td id="cell-18" onclick="hit(18)" onmouseover="hover(18)"></td>
+			<td id="cell-19" onclick="hit(19)" onmouseover="hover(19)"></td>
+			<td id="cell-20" onclick="hit(20)" onmouseover="hover(20)"></td>
 		</tr>
 		<tr>
-			<td id="cell-21" onclick="hit(21)"></td>
-			<td id="cell-22" onclick="hit(22)"></td>
-			<td id="cell-23" onclick="hit(23)"></td>
-			<td id="cell-24" onclick="hit(24)"></td>
-			<td id="cell-25" onclick="hit(25)"></td>
-			<td id="cell-26" onclick="hit(26)"></td>
-			<td id="cell-27" onclick="hit(27)"></td>
+			<td id="cell-21" onclick="hit(21)" onmouseover="hover(21)"></td>
+			<td id="cell-22" onclick="hit(22)" onmouseover="hover(22)"></td>
+			<td id="cell-23" onclick="hit(23)" onmouseover="hover(23)"></td>
+			<td id="cell-24" onclick="hit(24)" onmouseover="hover(24)"></td>
+			<td id="cell-25" onclick="hit(25)" onmouseover="hover(25)"></td>
+			<td id="cell-26" onclick="hit(26)" onmouseover="hover(26)"></td>
+			<td id="cell-27" onclick="hit(27)" onmouseover="hover(27)"></td>
 		</tr>
 		<tr>
-			<td id="cell-28" onclick="hit(28)"></td>
-			<td id="cell-29" onclick="hit(29)"></td>
-			<td id="cell-30" onclick="hit(30)"></td>
-			<td id="cell-31" onclick="hit(31)"></td>
-			<td id="cell-32" onclick="hit(32)"></td>
-			<td id="cell-33" onclick="hit(33)"></td>
-			<td id="cell-34" onclick="hit(34)"></td>
+			<td id="cell-28" onclick="hit(28)" onmouseover="hover(28)"></td>
+			<td id="cell-29" onclick="hit(29)" onmouseover="hover(29)"></td>
+			<td id="cell-30" onclick="hit(30)" onmouseover="hover(30)"></td>
+			<td id="cell-31" onclick="hit(31)" onmouseover="hover(31)"></td>
+			<td id="cell-32" onclick="hit(32)" onmouseover="hover(32)"></td>
+			<td id="cell-33" onclick="hit(33)" onmouseover="hover(33)"></td>
+			<td id="cell-34" onclick="hit(34)" onmouseover="hover(34)"></td>
 		</tr>
 		<tr>
-			<td id="cell-35" onclick="hit(35)"></td>
-			<td id="cell-36" onclick="hit(36)"></td>
-			<td id="cell-37" onclick="hit(37)"></td>
-			<td id="cell-38" onclick="hit(38)"></td>
-			<td id="cell-39" onclick="hit(39)"></td>
-			<td id="cell-40" onclick="hit(40)"></td>
-			<td id="cell-41" onclick="hit(41)"></td>
+			<td id="cell-35" onclick="hit(35)" onmouseover="hover(35)"></td>
+			<td id="cell-36" onclick="hit(36)" onmouseover="hover(36)"></td>
+			<td id="cell-37" onclick="hit(37)" onmouseover="hover(37)"></td>
+			<td id="cell-38" onclick="hit(38)" onmouseover="hover(38)"></td>
+			<td id="cell-39" onclick="hit(39)" onmouseover="hover(39)"></td>
+			<td id="cell-40" onclick="hit(40)" onmouseover="hover(40)"></td>
+			<td id="cell-41" onclick="hit(41)" onmouseover="hover(41)"></td>
 		</tr>
 	</table>
 
@@ -181,6 +187,17 @@
 			return lowest;
 		}
 
+		function hover(cell) {
+			var top = cell % cols;
+			for (var i = 0; i < data.length; i++) {
+				var thisTop = i % cols;
+				if (thisTop == top) {
+					document.getElementById("cell-" + i).classList.add("hover");
+				}
+				else document.getElementById("cell-" + i).classList.remove("hover");
+			}
+		}
+
 		function hit(cell) {
 			if (!playing) { return; }
 			var lowestEmptyInCol = getLowestEmptyInCol(cell);
@@ -212,7 +229,10 @@
 				else if (data[i] === "O") {
 					document.getElementById("cell-" + i).classList.add("yellow");
 				}
-				else document.getElementById("cell-" + i).className = "";
+				else {
+					document.getElementById("cell-" + i).classList.remove("red");
+					document.getElementById("cell-" + i).classList.remove("yellow");
+				}
 			}
 		}
 
